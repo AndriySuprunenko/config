@@ -37,6 +37,7 @@ return {
 					"prismals",
 					"pyright",
 					"intelephense",
+					"gopls",
 				},
 				-- auto-install configured servers (with lspconfig)
 				automatic_installation = true, -- not the same as ensure_installed
@@ -50,7 +51,8 @@ return {
 					"black", -- python formatter
 					"pylint", -- python linter
 					"eslint_d", -- js linter
-          "phpmd",
+					"phpmd",
+					"golangci-lint",
 				},
 			})
 		end,
@@ -170,8 +172,14 @@ return {
 				on_attach = on_attach,
 			})
 
-			-- configure python server
+			-- configure php server
 			lspconfig["intelephense"].setup({
+				capabilities = capabilities,
+				on_attach = on_attach,
+			})
+
+			-- configure go server
+			lspconfig["gopls"].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
 			})
