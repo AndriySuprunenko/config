@@ -6,7 +6,7 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set smartindent")
 vim.cmd("set autoindent")
-vim.cmd("set signcolumn")
+vim.cmd("set signcolumn=auto")
 
 vim.g.mapleader = " "
 -- Explorer
