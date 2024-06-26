@@ -13,9 +13,6 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>x", ":Ex<CR>", {})
 --Bufferline
 vim.keymap.set("n", "<leader>bl", ":BufferLinePick<CR>")
--- Save and quit
-vim.keymap.set("n", "<leader>w", ":w<CR>", {})
-vim.keymap.set("n", "<leader>q", ":q<CR>", {})
 --Delete word
 vim.keymap.set("n", "dw", "diw")
 -- Select all
