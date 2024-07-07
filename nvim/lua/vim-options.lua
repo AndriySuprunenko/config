@@ -11,16 +11,10 @@ vim.cmd("set signcolumn=auto")
 vim.g.mapleader = " "
 -- Explorer
 vim.keymap.set("n", "<leader>x", ":Ex<CR>", {})
---Bufferline
-vim.keymap.set("n", "<leader>bl", ":BufferLinePick<CR>")
 --Delete word
 vim.keymap.set("n", "dw", "diw")
 -- Select all
 vim.keymap.set("n", "<leader>a", "gg<S-v>G")
--- New tab
-vim.keymap.set("n", "<tab>", ":BufferLineCycleNext<Return>", {})
-vim.keymap.set("n", "<s-tab>", ":BufferLineCyclePrev<Return>", {})
-vim.keymap.set("n", "<leader>c", ":BufferLinePickClose<Return>", {})
 -- Split window
 vim.keymap.set("n", "<leader>ss", ":split<CR>", {})
 vim.keymap.set("n", "<leader>sv", ":vsplit<CR>", {})
