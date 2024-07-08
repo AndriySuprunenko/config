@@ -13,6 +13,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>x", ":Ex<CR>", {})
 --Delete word
 vim.keymap.set("n", "dw", "diw")
+vim.keymap.set("n", "cw", "ciw")
 -- Select all
 vim.keymap.set("n", "<leader>a", "gg<S-v>G")
 -- Split window
