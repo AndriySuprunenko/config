@@ -32,8 +32,6 @@ vim.keymap.set("n", "<leader>ht", ':lua require("harpoon.ui").toggle_quick_menu(
 vim.keymap.set("n", "<leader>hn", ':lua require("harpoon.ui").nav_next()<CR>', {})
 vim.keymap.set("n", "<leader>hp", ':lua require("harpoon.ui").nav_prev()<CR>', {})
 
-vim.transparent_window = true
-
 -- todo
 vim.keymap.set("n", "<leader>t", ":TodoLocList<CR>")
 vim.keymap.set("n", "<leader>tn", function()
