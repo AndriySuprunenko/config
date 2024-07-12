@@ -38,6 +38,7 @@ return {
 					"pyright",
 					"intelephense",
 					"gopls",
+					"svelte",
 				},
 				-- auto-install configured servers (with lspconfig)
 				automatic_installation = true, -- not the same as ensure_installed
@@ -143,6 +144,12 @@ return {
 
 			-- configure css server
 			lspconfig["cssls"].setup({
+				capabilities = capabilities,
+				on_attach = on_attach,
+			})
+
+			-- configure svelte server
+			lspconfig["svelte"].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
 			})
