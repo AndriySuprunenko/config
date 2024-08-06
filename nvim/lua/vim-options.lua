@@ -7,7 +7,8 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set smartindent")
 vim.cmd("set autoindent")
 vim.cmd("set signcolumn=auto")
-
+vim.cmd("set laststatus=0")
+vim.opt.fillchars = { vert = " ", eob = " " }
 vim.g.mapleader = " "
 -- Explorer
 vim.keymap.set("n", "<leader>x", ":Ex<CR>", {})
