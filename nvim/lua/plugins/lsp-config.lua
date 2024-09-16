@@ -28,7 +28,7 @@ return {
 			mason_lspconfig.setup({
 				-- list of servers for mason to install
 				ensure_installed = {
-					"tsserver",
+					"ts_ls",
 					"html",
 					"cssls",
 					"tailwindcss",
@@ -36,6 +36,7 @@ return {
 					"emmet_ls",
 					"prismals",
 					"pyright",
+					"ruff",
 					"intelephense",
 					"gopls",
 					"svelte",
@@ -50,8 +51,11 @@ return {
 					"stylua", -- lua formatter
 					"isort", -- python formatter
 					"black", -- python formatter
+					"gofumpt",
+					"goimports",
 					"pylint", -- python linter
 					"eslint_d", -- js linter
+					"ruff",
 					"phpmd",
 					"golangci-lint",
 				},
@@ -137,7 +141,7 @@ return {
 			})
 
 			-- configure typescript server with plugin
-			lspconfig["tsserver"].setup({
+			lspconfig["ts_ls"].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
 			})
@@ -179,6 +183,11 @@ return {
 				on_attach = on_attach,
 			})
 
+			lspconfig["ruff"].setup({
+				capabilities = capabilities,
+				on_attach = on_attach,
+			})
+
 			-- configure php server
 			lspconfig["intelephense"].setup({
 				capabilities = capabilities,
@@ -189,6 +198,11 @@ return {
 			lspconfig["gopls"].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
+				settings = {
+					gopls = {
+						completeUnimported = true,
+					},
+				},
 			})
 
 			-- configure lua server (with special settings)
