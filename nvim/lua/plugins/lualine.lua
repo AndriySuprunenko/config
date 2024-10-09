@@ -6,7 +6,7 @@ return {
 		local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 		lualine.setup({
 			options = {
-				theme = "dracula",
+				theme = "auto",
 			},
 			sections = {
 				lualine_x = {

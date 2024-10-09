@@ -10,6 +10,7 @@ vim.cmd("set signcolumn=auto")
 vim.cmd("set laststatus=0")
 vim.opt.fillchars = { vert = " ", eob = " " }
 vim.g.mapleader = " "
+
 -- Explorer
 vim.keymap.set("n", "<leader>x", ":Ex<CR>", {})
 --Delete word
@@ -17,6 +18,8 @@ vim.keymap.set("n", "dw", "diw")
 vim.keymap.set("n", "cw", "ciw")
 -- Select all
 vim.keymap.set("n", "<leader>a", "gg<S-v>G")
+-- Themes
+vim.keymap.set("n", "<leader>ct", ":Themery<CR>")
 -- Split window
 vim.keymap.set("n", "<leader>ss", ":split<CR>", {})
 vim.keymap.set("n", "<leader>sv", ":vsplit<CR>", {})
