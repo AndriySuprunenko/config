@@ -10,7 +10,9 @@ vim.cmd("set signcolumn=auto")
 vim.cmd("set laststatus=0")
 vim.opt.fillchars = { vert = "|", eob = " " }
 vim.g.mapleader = " "
-
+-- Save and Quit
+vim.keymap.set("n", "<leader>w", ":w<CR>", {})
+vim.keymap.set("n", "<leader>q", ":q<CR>", {})
 -- Explorer
 vim.keymap.set("n", "<leader>x", ":Ex<CR>", {})
 --Delete word
@@ -18,8 +20,6 @@ vim.keymap.set("n", "dw", "diw")
 vim.keymap.set("n", "cw", "ciw")
 -- Select all
 vim.keymap.set("n", "<leader>a", "gg<S-v>G")
--- Themes
-vim.keymap.set("n", "<leader>ct", ":Themery<CR>")
 -- Split window
 vim.keymap.set("n", "<leader>ss", ":split<CR>", {})
 vim.keymap.set("n", "<leader>sv", ":vsplit<CR>", {})
@@ -37,7 +37,7 @@ vim.keymap.set("n", "<leader>hn", ':lua require("harpoon.ui").nav_next()<CR>', {
 vim.keymap.set("n", "<leader>hp", ':lua require("harpoon.ui").nav_prev()<CR>', {})
 
 -- todo
-vim.keymap.set("n", "<leader>t", ":TodoLocList<CR>")
+vim.keymap.set("n", "<leader>tt", ":TodoLocList<CR>")
 vim.keymap.set("n", "<leader>tn", function()
 	require("todo-comments").jump_next()
 end, { desc = "Next todo comment" })
