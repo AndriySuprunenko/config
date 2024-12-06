@@ -15,6 +15,8 @@ vim.keymap.set("n", "<leader>w", ":w<CR>", {})
 vim.keymap.set("n", "<leader>q", ":q<CR>", {})
 -- Explorer
 vim.keymap.set("n", "<leader>x", ":Ex<CR>", {})
+-- Copy to clipboard
+vim.keymap.set("v", "<leader>y", '"+y', {})
 --Delete word
 vim.keymap.set("n", "dw", "diw")
 vim.keymap.set("n", "cw", "ciw")
