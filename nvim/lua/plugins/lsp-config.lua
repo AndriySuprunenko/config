@@ -36,7 +36,6 @@ return {
 					"emmet_ls",
 					"prismals",
 					"pyright",
-					"ruff",
 					"intelephense",
 					"gopls",
 					"svelte",
@@ -53,9 +52,10 @@ return {
 					"black", -- python formatter
 					"gofumpt",
 					"goimports",
-					"pylint", -- python linter
 					"eslint_d", -- js linter
+					"pylint",
 					"ruff",
+					"mypy",
 					"phpmd",
 					"golangci-lint",
 				},
