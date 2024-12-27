@@ -11,8 +11,8 @@ vim.cmd("set laststatus=0")
 vim.opt.fillchars = { vert = "|", eob = " " }
 vim.g.mapleader = " "
 -- Save and Quit
-vim.keymap.set("n", "<leader>w", ":w<CR>", {})
-vim.keymap.set("n", "<leader>q", ":q<CR>", {})
+vim.keymap.set("n", "w", ":w<CR>", {})
+vim.keymap.set("n", "q", ":q<CR>", {})
 -- Explorer
 vim.keymap.set("n", "<leader>x", ":Ex<CR>", {})
 -- Copy to clipboard
