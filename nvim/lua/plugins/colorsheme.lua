@@ -8,11 +8,11 @@ return {
         transparent = true,
         styles = {
           comments = { italic = true },
-          sidebars = "transparent",
-          floats = "transparent",
+          -- sidebars = "transparent",
+          -- floats = "transparent",
         },
       })
-      -- vim.cmd.colorscheme("solarized-osaka")
+      vim.cmd.colorscheme("solarized-osaka")
     end,
   },
   {
@@ -24,11 +24,11 @@ return {
         transparent = true,
         styles = {
           comments = { italic = true },
-          sidebars = "transparent",
-          floats = "transparent",
+          -- sidebars = "transparent",
+          -- floats = "transparent",
         },
       })
-      vim.cmd.colorscheme("tokyonight")
+      -- vim.cmd.colorscheme("tokyonight")
     end,
   },
 }
