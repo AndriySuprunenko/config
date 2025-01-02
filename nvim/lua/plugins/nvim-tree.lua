@@ -7,8 +7,7 @@ return {
 	},
 	config = function()
 		require("nvim-tree").setup({
-			vim.keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>", {}),
-			vim.keymap.set("n", "<leader>ef", ":NvimTreeFocus<CR>", {}),
+			vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", {}),
 			renderer = {
 				icons = {
 					glyphs = {

@@ -1,10 +1,9 @@
 # By default Reload config with shft + cmd + , 
 # iTerm2 Solarized Dark
 # tokyonight-storm
-theme = iTerm2 Solarized Dark
-
-background-opacity = 0.9
-background-blur-radius = 20
+theme = tokyonight
+background-opacity = 0.8
+background-blur-radius = 15
 
 font-family = JetBrainsMono Nerd Font Mono
 font-size = 18

@@ -52,7 +52,7 @@ return {
 					"black", -- python formatter
 					"gofumpt",
 					"goimports",
-					"eslint_d", -- js linter
+					"eslint", -- js linter
 					"pylint",
 					"ruff",
 					"mypy",
@@ -142,6 +142,12 @@ return {
 
 			-- configure typescript server with plugin
 			lspconfig["ts_ls"].setup({
+				capabilities = capabilities,
+				on_attach = on_attach,
+			})
+
+			-- configure eslint server with plugin
+			lspconfig["eslint"].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
 			})
