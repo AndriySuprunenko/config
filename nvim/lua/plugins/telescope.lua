@@ -14,6 +14,8 @@ return {
 		telescope.setup({
 			defaults = {
 				path_display = { "smart" },
+				layout_strategy = "horizontal",
+				layout_config = { prompt_position = "top" },
 				mappings = {
 					i = {
 						["<C-k>"] = actions.move_selection_previous, -- move to prev result
@@ -21,6 +23,8 @@ return {
 						["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
 					},
 				},
+				prompt_prefix = " 🔭 ", -- custom prompt icon
+				selection_caret = "➨ ", -- selection indicator
 			},
 		})
 
