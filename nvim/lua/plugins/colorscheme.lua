@@ -22,8 +22,8 @@ return {
 				transparent = true,
 				styles = {
 					comments = { italic = true },
-					-- sidebars = "transparent",
-					-- floats = "transparent",
+					sidebars = "transparent",
+					floats = "transparent",
 				},
 			})
 			vim.cmd.colorscheme("tokyonight")

@@ -1,6 +1,10 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
+-- Mason and Lazy
+keymap.set("n", "<leader>m", ":Mason<CR>", { desc = "Mason" })
+keymap.set("n", "<leader>L", ":Lazy<CR>", { desc = "Lazy" })
+
 -- Nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle nvim-tree" })
 -- Telescope
@@ -9,9 +13,6 @@ keymap.set("n", "<leader><leader>", "<cmd>Telescope find_files<cr>", { desc = "F
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Show buffers files" })
 keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find string" })
 keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
--- Save and Quit
-keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save" })
-keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 -- Explorer
 keymap.set("n", "<leader>x", ":Ex<CR>", { desc = "Explorer" })
 -- Copy to clipboard
