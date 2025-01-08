@@ -34,11 +34,10 @@ return {
 					"tailwindcss",
 					"lua_ls",
 					"emmet_ls",
-					"prismals",
 					"pyright",
 					"intelephense",
 					"gopls",
-					"svelte",
+					"eslint", -- js linter
 				},
 				-- auto-install configured servers (with lspconfig)
 				automatic_installation = true, -- not the same as ensure_installed
@@ -52,11 +51,9 @@ return {
 					"black", -- python formatter
 					"gofumpt",
 					"goimports",
-					"eslint", -- js linter
 					"pylint",
 					"ruff",
 					"mypy",
-					"phpmd",
 					"golangci-lint",
 				},
 			})
@@ -134,79 +131,22 @@ return {
 				vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 			end
 
-			-- configure html server
-			lspconfig["html"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
+			local servers =
+				{ "html", "ts_ls", "eslint", "cssls", "tailwindcss", "prismals", "pyright", "ruff", "intelephense" }
 
-			-- configure typescript server with plugin
-			lspconfig["ts_ls"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
+			for _, lsp in ipairs(servers) do
+				lspconfig[lsp].setup({
+					capabilities = capabilities,
+					on_attach = on_attach,
+				})
+			end
 
-			-- configure eslint server with plugin
-			lspconfig["eslint"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
-
-			-- configure angular server with plugin
-			lspconfig["angularls"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
-
-			-- configure css server
-			lspconfig["cssls"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
-
-			-- configure svelte server
-			lspconfig["svelte"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
-
-			-- configure tailwindcss server
-			lspconfig["tailwindcss"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
-
-			-- configure prisma orm server
-			lspconfig["prismals"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
-
-			-- configure emmet language server
 			lspconfig["emmet_ls"].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
-				filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+				filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
 			})
 
-			-- configure python server
-			lspconfig["pyright"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
-
-			lspconfig["ruff"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
-
-			-- configure php server
-			lspconfig["intelephense"].setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-			})
-
-			-- configure go server
 			lspconfig["gopls"].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
