@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
+keymap.set("n", "x", '"_x', {})
 -- Mason and Lazy
 keymap.set("n", "<leader>m", ":Mason<CR>", { desc = "Mason" })
 keymap.set("n", "<leader>L", ":Lazy<CR>", { desc = "Lazy" })
