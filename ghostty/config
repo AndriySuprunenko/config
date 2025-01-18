@@ -1,7 +1,8 @@
 # By default Reload config with shft + cmd + , 
 # iTerm2 Solarized Dark
 # tokyonight-storm
-theme = catppuccin-macchiato
+# catppuccin-macchiato
+theme = iTerm2 Solarized Dark
 background-opacity = 1.0
 background-blur-radius = 0
 
