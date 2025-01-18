@@ -2,9 +2,9 @@
 # iTerm2 Solarized Dark
 # tokyonight-storm
 # catppuccin-macchiato
-theme = iTerm2 Solarized Dark
-background-opacity = 1.0
-background-blur-radius = 0
+theme = tokyonight-storm
+background-opacity = 0.8
+background-blur-radius = 15
 
 font-family = JetBrainsMono Nerd Font Mono
 font-size = 18

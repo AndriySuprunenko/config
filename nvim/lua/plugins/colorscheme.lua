@@ -12,7 +12,7 @@ return {
 					floats = "transparent",
 				},
 			})
-			vim.cmd.colorscheme("solarized-osaka")
+			-- vim.cmd.colorscheme("solarized-osaka")
 		end,
 	},
 	{
@@ -28,7 +28,7 @@ return {
 					floats = "transparent",
 				},
 			})
-			-- vim.cmd.colorscheme("tokyonight-storm")
+			vim.cmd.colorscheme("tokyonight-storm")
 		end,
 	},
 	{

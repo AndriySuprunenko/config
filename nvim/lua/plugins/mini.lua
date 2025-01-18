@@ -18,8 +18,8 @@ return {
 				close = "q",
 				go_in = "<right>",
 				go_in_plus = "<CR>",
-				go_out = "<left>",
-				go_out_plus = "H",
+				go_out = "h",
+				go_out_plus = "<left>",
 				mark_goto = "'",
 				mark_set = "m",
 				reset = "<BS>",
@@ -33,7 +33,7 @@ return {
 			-- General options
 			options = {
 				-- Whether to delete permanently or move into module-specific trash
-				permanent_delete = true,
+				permanent_delete = false,
 				-- Whether to use for editing directories
 				use_as_default_explorer = true,
 			},
