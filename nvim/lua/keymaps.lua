@@ -6,8 +6,6 @@ keymap.set("n", "x", '"_x', {})
 keymap.set("n", "<leader>m", ":Mason<CR>", { desc = "Mason" })
 keymap.set("n", "<leader>L", ":Lazy<CR>", { desc = "Lazy" })
 
--- Nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle nvim-tree" })
 -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
 keymap.set("n", "<leader><leader>", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
@@ -15,7 +13,7 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Show buffe
 keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find string" })
 keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
 -- Explorer
-keymap.set("n", "<leader>x", ":lua MiniFiles.open()<CR>", { desc = "Explorer" })
+keymap.set("n", "<leader>e", ":lua MiniFiles.open()<CR>", { desc = "Explorer" })
 -- Copy to clipboard
 keymap.set("v", "<leader>y", '"+y', { desc = "Copy to clipboard" })
 --Delete word
