@@ -55,8 +55,8 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 inner.horizontal = 10
 inner.vertical =   10
 outer.left =       10
-outer.bottom =     10
-outer.top =        10
+outer.bottom =     [{ monitor.main = 10 }, { monitor.secondary = 10 }, 0]
+outer.top =        [{ monitor.main = 10 }, { monitor.secondary = 45 }, 0]
 outer.right =      10
 
 # 'main' binding mode declaration
@@ -138,5 +138,7 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-1 = 'main'                       # Main monitor
+1 = 'secondary'                       # Main monitor
 2 = 'secondary'                  # Non-main monitor in case when there are only two monitors
+3 = 'secondary'                  # Non-main monitor in case when there are only two monitors
+4 = 'main'                       # Main monitor
