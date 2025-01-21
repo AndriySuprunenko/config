@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # icon.padding_left=0 \
-sketchybar --add item media left\
+sketchybar --add item media right\
            --set media label.color=$ACCENT_COLOR \
-                       label.max_chars=50 \
+                       label.max_chars=30 \
                        scroll_texts=on \
                        icon=􀑪             \
                        icon.color=$ACCENT_COLOR   \
