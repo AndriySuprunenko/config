@@ -23,7 +23,7 @@ sketchybar --bar height=34        \
                  sticky=off       \
                  padding_left=5  \
                  margin=10 \
-                 corner_radius=15 \
+                 corner_radius=10 \
                  padding_right=10 \
                  y_offset=5 \
                  color=$BAR_COLOR
@@ -35,9 +35,9 @@ sketchybar --bar height=34        \
 
 sketchybar --default icon.font="SF Pro:Semibold:15.0"  \
                      icon.color=$WHITE                 \
+                     label.color=$WHITE                 \
                      label.font="SF Pro:Semibold:15.0" \
-                     label.color=$WHITE                \
-                     background.color=$ITEM_BG_COLOR       \
+                     background.color=$ACCENT_COLOR \
                      background.corner_radius=5            \
                      background.height=24                  \
                      padding_left=5                        \
@@ -50,8 +50,6 @@ sketchybar --default icon.font="SF Pro:Semibold:15.0"  \
 # -- Left Side Items --
 source $ITEM_DIR/spaces.sh
 source $ITEM_DIR/front_app.sh
-
-# -- Right Side Of Notch Items --
 source $ITEM_DIR/media.sh
 
 # -- Right Side Items --

@@ -1,11 +1,10 @@
 #!/bin/bash
 
 # icon.padding_left=0 \
-sketchybar --add item media e \
+sketchybar --add item media left\
            --set media label.color=$ACCENT_COLOR \
-                       label.max_chars=20 \
+                       label.max_chars=50 \
                        scroll_texts=on \
-                       icon.padding_left=0 \
                        icon=􀑪             \
                        icon.color=$ACCENT_COLOR   \
                        background.drawing=off \
