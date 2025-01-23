@@ -18,7 +18,7 @@ return {
 				close = "q",
 				go_in = "<right>",
 				go_in_plus = "<CR>",
-				go_out = "h",
+				go_out = "H",
 				go_out_plus = "<left>",
 				mark_goto = "'",
 				mark_set = "m",
