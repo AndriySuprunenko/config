@@ -65,7 +65,6 @@ source $ITEM_DIR/battery.sh
 source $ITEM_DIR/ram.sh
 source $ITEM_DIR/disk.sh
 source $ITEM_DIR/cpu.sh
-source $ITEM_DIR/media.sh
 
 
 ##### Finalizing Setup #####
