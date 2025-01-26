@@ -112,13 +112,11 @@ alt-shift-equal = 'resize smart +50'
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
-alt-4 = 'workspace 4'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
 alt-shift-3 = 'move-node-to-workspace 3'
-alt-shift-4 = 'move-node-to-workspace 4'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -146,4 +144,3 @@ alt-shift-l = ['join-with right', 'mode main']
 1 = 'main'                       # Main monitor
 2 = 'secondary'                  # Non-main monitor in case when there are only two monitors
 3 = 'secondary'                  # Non-main monitor in case when there are only two monitors
-4 = 'secondary'                       # Main monitor
