@@ -5,5 +5,5 @@ sketchybar --add item disk right \
                      icon=􀤃 \
                      icon.color=$TEXT_COLOR \
                      label.color=$TEXT_COLOR \
-                     background.color=$ITEM_BG_COLOR_ONE \
+                     background.color=$ITEM_BG_COLOR_SEVEN \
                      script="$PLUGIN_DIR/disk.sh"
