@@ -23,6 +23,12 @@ if [[ $CHARGING != "" ]]; then
   ICON="􀢋"
 fi
 
+# Add low battery warning
+if [ $PERCENTAGE -le 20 ] && [ "$CHARGING" = "" ]; then
+    # Add notification or visual indicator
+    LABEL_COLOR="0xffff0000"
+fi
+
 # The item invoking this script (name $NAME) will get its icon and label
 # updated with the current battery status
 sketchybar --set $NAME icon="$ICON" label="${PERCENTAGE}%"
