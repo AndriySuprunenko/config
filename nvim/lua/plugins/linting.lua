@@ -9,7 +9,6 @@ return {
 		lint.linters_by_ft = {
 			python = { "pylint", "ruff", "mypy" },
 			php = { "phpcd" },
-			go = { "golangci-lint" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

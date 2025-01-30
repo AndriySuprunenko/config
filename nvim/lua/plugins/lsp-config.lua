@@ -54,7 +54,7 @@ return {
 					"pylint",
 					"ruff",
 					"mypy",
-					"golangci-lint",
+					"golangci_lint_ls",
 				},
 			})
 		end,
@@ -131,8 +131,18 @@ return {
 				vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 			end
 
-			local servers =
-				{ "html", "ts_ls", "eslint", "cssls", "tailwindcss", "prismals", "pyright", "ruff", "intelephense" }
+			local servers = {
+				"html",
+				"ts_ls",
+				"eslint",
+				"cssls",
+				"tailwindcss",
+				"prismals",
+				"pyright",
+				"ruff",
+				"intelephense",
+				"golangci_lint_ls",
+			}
 
 			for _, lsp in ipairs(servers) do
 				lspconfig[lsp].setup({
