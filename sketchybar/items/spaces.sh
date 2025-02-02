@@ -7,7 +7,7 @@ for sid in $(aerospace list-workspaces --all); do
         --subscribe space.$sid aerospace_workspace_change \
         --set space.$sid \
         background.color=$ITEM_BG_COLOR_ONE \
-        background.corner_radius=5 \
+        background.corner_radius=15 \
         background.height=26 \
         background.drawing=off \
         label="$sid" \

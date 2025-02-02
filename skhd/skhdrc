@@ -50,7 +50,10 @@
 # ctrl + alt - s : yabai --start-service
 # ctrl + alt - r : yabai --restart-service
 
-alt - t : open -n -a "Ghostty"
-alt - b : open -n -a "Arc"
-alt - c : open -n -a "CleanMyMac X"
-alt - a : open -n -a "Affinity Photo 2"
+alt - g : open -a "Ghostty"
+alt - b : open -a "Arc"
+alt - c : open -a "CleanMyMac X"
+alt - a : open -a "Affinity Photo 2"
+alt - v : open -a "Viber"
+alt - t : open -a "Telegram"
+alt - d : open ~/Downloads
