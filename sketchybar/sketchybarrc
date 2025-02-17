@@ -23,15 +23,15 @@ fi
 # If you are looking for other colors, see the color picker:
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
-sketchybar --bar height=34        \
+                 # margin=5 \
+                 # y_offset=5 \
+                 # corner_radius=20 \
+sketchybar --bar height=32        \
                  blur_radius=30   \
                  position=top     \
                  sticky=off       \
                  padding_left=5  \
-                 margin=5 \
-                 corner_radius=20 \
                  padding_right=5 \
-                 y_offset=5 \
                  color=$BAR_COLOR
 
 ##### Changing Defaults #####

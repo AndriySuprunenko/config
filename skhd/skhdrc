@@ -51,7 +51,7 @@
 # ctrl + alt - r : yabai --restart-service
 
 alt - g : open -a "Ghostty"
-alt - b : open -a "Arc"
+alt - b : open -a "Brave Browser"
 alt - c : open -a "CleanMyMac X"
 alt - a : open -a "Affinity Photo 2"
 alt - v : open -a "Viber"
