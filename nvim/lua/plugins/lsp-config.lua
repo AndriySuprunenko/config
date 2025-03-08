@@ -36,6 +36,7 @@ return {
 					"emmet_ls",
 					"pyright",
 					"intelephense",
+					"phpactor",
 					"gopls",
 					"eslint", -- js linter
 				},
@@ -50,6 +51,8 @@ return {
 					"isort", -- python formatter
 					"black", -- python formatter
 					"gofumpt",
+					"phpcbf",
+					"psalm",
 					"goimports",
 					"pylint",
 					"ruff",
@@ -141,6 +144,7 @@ return {
 				"pyright",
 				"ruff",
 				"intelephense",
+				"phpactor",
 				"golangci_lint_ls",
 			}
 
