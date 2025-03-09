@@ -38,6 +38,7 @@ return {
 					"intelephense",
 					"phpactor",
 					"gopls",
+					"psalm",
 					"eslint", -- js linter
 				},
 				-- auto-install configured servers (with lspconfig)
@@ -51,8 +52,6 @@ return {
 					"isort", -- python formatter
 					"black", -- python formatter
 					"gofumpt",
-					"phpcbf",
-					"psalm",
 					"goimports",
 					"pylint",
 					"ruff",
@@ -145,6 +144,7 @@ return {
 				"ruff",
 				"intelephense",
 				"phpactor",
+				"psalm",
 				"golangci_lint_ls",
 			}
 

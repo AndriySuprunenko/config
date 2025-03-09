@@ -20,7 +20,6 @@ return {
 				graphql = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
-				php = { "phpcbf" },
 				go = { "goimports", "gofumpt" },
 			},
 			format_on_save = {
