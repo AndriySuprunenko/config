@@ -4,7 +4,7 @@
 # catppuccin-macchiato
 # ayu-mirage
 theme = "Ayu Mirage"
-background-opacity = 1.0
+background-opacity = 0.6
 background-blur-radius = 35
 
 font-family = JetBrainsMono Nerd Font Mono
