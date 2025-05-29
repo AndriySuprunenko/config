@@ -36,7 +36,6 @@ return {
 					"emmet_ls",
 					"pyright",
 					"intelephense",
-					"phpactor",
 					"gopls",
 					"psalm",
 					"eslint", -- js linter
@@ -143,7 +142,6 @@ return {
 				"pyright",
 				"ruff",
 				"intelephense",
-				"phpactor",
 				"psalm",
 				"golangci_lint_ls",
 			}
@@ -158,7 +156,17 @@ return {
 			lspconfig["emmet_ls"].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
-				filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
+				filetypes = {
+					"html",
+					"typescriptreact",
+					"javascriptreact",
+					"css",
+					"sass",
+					"scss",
+					"less",
+					"php",
+					"blade",
+				},
 			})
 
 			lspconfig["gopls"].setup({

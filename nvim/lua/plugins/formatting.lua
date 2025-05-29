@@ -21,6 +21,7 @@ return {
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				go = { "goimports", "gofumpt" },
+				php = { "pint" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

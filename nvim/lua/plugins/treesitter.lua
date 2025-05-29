@@ -1,11 +1,28 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	event = { "BufReadPre", "BufNewFile" },
+	dependencies = { "EmranMR/tree-sitter-blade" },
 	build = ":TSUpdate",
 	config = function()
 		local configs = require("nvim-treesitter.configs")
 		configs.setup({
 			auto_install = true,
+			sync_install = true,
+			ensure_installed = {
+				"php",
+				"php_only",
+				"html",
+				"css",
+				"javascript",
+				"typescript",
+				"json",
+				"yaml",
+				"markdown",
+				"graphql",
+				"lua",
+				"python",
+				"go",
+			},
 			highlight = { enable = true },
 			indent = { enable = true },
 			autotag = {
@@ -13,6 +30,9 @@ return {
 				enable_rename = true,
 				enable_close = true,
 				enable_close_on_slash = true,
+			},
+			filetype_add = {
+				pattern = { [".*%.blade%.php"] = "blade" },
 			},
 		})
 	end,
