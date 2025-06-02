@@ -128,7 +128,7 @@ function icon_map() {
   "Brave Browser")
     icon_result=":brave_browser:"
     ;;
-  "Zen Browser")
+  "Zen")
     icon_result="󰺕"
     ;;
   "Spotlight")
