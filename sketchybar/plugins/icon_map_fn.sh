@@ -17,6 +17,9 @@ function icon_map() {
   "Microsoft To Do" | "Things")
     icon_result=":things:"
     ;;
+  "Rakuten Viber")
+    icon_result=":viber:"
+    ;;
   "Keyboard Maestro")
     icon_result=":keyboard_maestro:"
     ;;
