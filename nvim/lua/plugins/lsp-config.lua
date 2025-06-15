@@ -39,6 +39,7 @@ return {
 					"gopls",
 					"psalm",
 					"eslint", -- js linter
+					"clangd",
 				},
 				-- auto-install configured servers (with lspconfig)
 				automatic_installation = true, -- not the same as ensure_installed
@@ -56,6 +57,7 @@ return {
 					"ruff",
 					"mypy",
 					"golangci_lint_ls",
+					"clang-format",
 				},
 			})
 		end,
@@ -144,6 +146,7 @@ return {
 				"intelephense",
 				"psalm",
 				"golangci_lint_ls",
+				"clangd",
 			}
 
 			for _, lsp in ipairs(servers) do
