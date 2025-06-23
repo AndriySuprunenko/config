@@ -54,17 +54,17 @@ sketchybar --default icon.font="SF Pro:Semibold:15.0"  \
                      icon.padding_right=4
 
 # -- Left Side Items --
-# source $ITEM_DIR/apple.sh
-source $ITEM_DIR/spaces.sh
+source $ITEM_DIR/apple.sh
 source $ITEM_DIR/front_app.sh
+source $ITEM_DIR/spaces.sh
 
 # -- Right Side Items --
 source $ITEM_DIR/calendar.sh
-# source $ITEM_DIR/volume.sh
+source $ITEM_DIR/volume.sh
 source $ITEM_DIR/battery.sh
-# source $ITEM_DIR/ram.sh
-# source $ITEM_DIR/disk.sh
-# source $ITEM_DIR/cpu.sh
+source $ITEM_DIR/disk.sh
+source $ITEM_DIR/ram.sh
+source $ITEM_DIR/cpu.sh
 
 
 ##### Finalizing Setup #####
