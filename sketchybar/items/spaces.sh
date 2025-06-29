@@ -6,12 +6,12 @@ for sid in $(aerospace list-workspaces --all); do
     sketchybar --add item space.$sid left \
         --subscribe space.$sid aerospace_workspace_change \
         --set space.$sid \
-        background.color=$ITEM_BG_COLOR_FIVE \
+        background.color=$ITEM_BG_COLOR_ONE \
         background.corner_radius=15 \
         background.height=26 \
-        background.drawing=off \
+        background.drawing=on \
         label="$sid" \
-        label.color=$TEXT_COLOR \
+        label.color=$ITEM_BG_COLOR_FOUR \
         icon.padding_left=0                          \
         icon.padding_right=14                          \
         label.padding_right=20                        \
