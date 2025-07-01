@@ -8,7 +8,6 @@ for sid in $(aerospace list-workspaces --all); do
         --set space.$sid \
         background.color=$ITEM_BG_COLOR_FOUR \
         background.corner_radius=0 \
-        background.height=24 \
         background.drawing=on \
         label="$sid" \
         label.color=$ITEM_BG_COLOR_TWO \

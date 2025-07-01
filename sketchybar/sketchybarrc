@@ -27,11 +27,11 @@ fi
                  # y_offset=5 \
                  # corner_radius=20 \
 sketchybar --bar height=32        \
-                 blur_radius=30   \
+                 blur_radius=0   \
                  position=top     \
                  sticky=off       \
-                 padding_left=5  \
-                 padding_right=5 \
+                 padding_left=0  \
+                 padding_right=0 \
                  color=$BAR_COLOR
 
 ##### Changing Defaults #####
@@ -45,7 +45,7 @@ sketchybar --default icon.font="SF Pro:Semibold:15.0"  \
                      label.font="SF Pro:Semibold:15.0" \
                      background.color=$ACCENT_COLOR    \
                      background.corner_radius=0        \
-                     background.height=24              \
+                     background.height=32              \
                      padding_left=1                    \
                      padding_right=0                   \
                      label.padding_left=4              \
