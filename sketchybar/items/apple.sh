@@ -6,10 +6,10 @@ POPUP_CLICK_SCRIPT="sketchybar --set \$NAME popup.drawing=toggle"
 sketchybar --add item           apple.logo left                             \
                                                                             \
            --set apple.logo     icon=""                                 \
-                                icon.color=$ITEM_BG_COLOR_FIVE                           \
                                 icon.font="JetBrainsMono Nerd Font:Semibold:18.0" \
-                                background.color=off \
+                                background.color=$ITEM_BG_COLOR_TREE \
                                 label.drawing=off                           \
+                                icon.padding_right=8                   \
                                 click_script="$POPUP_CLICK_SCRIPT"          \
                                                                             \
            --add item           apple.prefs popup.apple.logo                \
