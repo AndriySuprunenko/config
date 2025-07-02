@@ -22,6 +22,7 @@ return {
 				python = { "isort", "black" },
 				go = { "goimports", "gofumpt" },
 				php = { "pint" },
+				blade = { "tlint" },
 				cpp = { "clang-format" },
 			},
 			format_on_save = {

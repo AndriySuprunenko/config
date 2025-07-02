@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export TEXT_COLOR=0xff000000
+# export TEXT_COLOR=0xffff757f
 
 # -- Teal Scheme --
 # export BAR_COLOR=0xcc1f2335

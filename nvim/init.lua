@@ -23,3 +23,9 @@ require("lazy").setup("plugins", {
 		notify = false,
 	},
 })
+
+vim.filetype.add({
+	pattern = {
+		[".*%.blade%.php"] = "blade",
+	},
+})
