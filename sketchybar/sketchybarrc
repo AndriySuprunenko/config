@@ -61,6 +61,7 @@ source $ITEM_DIR/front_app.sh
 
 # -- Right Side Items --
 source $ITEM_DIR/calendar.sh
+source $ITEM_DIR/bluetooth.sh
 source $ITEM_DIR/volume.sh
 source $ITEM_DIR/battery.sh
 # source $ITEM_DIR/disk.sh
