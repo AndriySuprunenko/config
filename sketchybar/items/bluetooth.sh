@@ -6,7 +6,7 @@ sketchybar --add item bluetooth right \
                 update_freq=1 \
                 icon=􀒓 \
                 label="..." \
-                icon.padding_left=15 \
+                icon.padding_left=18 \
                 tooltip="Bluetooth status" \
                 click_script="open 'x-apple.systempreferences:com.apple.Bluetooth'" \
                 background.color=$ITEM_BG_COLOR_SIX
