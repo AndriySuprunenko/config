@@ -39,15 +39,15 @@ sketchybar --bar height=32        \
 # For a full list of all available item properties see:
 # https://felixkratz.github.io/SketchyBar/config/items
 
-                     # background.corner_radius=20     \
+                     # icon.color=$TEXT_COLOR            \
+                     # label.color=$TEXT_COLOR           \
 sketchybar --default icon.font="SF Pro:Semibold:15.0"  \
-                     icon.color=$TEXT_COLOR            \
-                     label.color=$TEXT_COLOR           \
                      label.font="SF Pro:Semibold:15.0" \
                      background.color=$ACCENT_COLOR    \
                      background.height=24              \
-                     padding_left=1                    \
-                     padding_right=0                   \
+                     padding_left=5                    \
+                     background.corner_radius=20     \
+                     padding_right=5                   \
                      label.padding_left=4              \
                      label.padding_right=10            \
                      icon.padding_left=10              \

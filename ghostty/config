@@ -3,9 +3,9 @@
 # tokyonight-storm
 # catppuccin-macchiato
 # ayu-mirage
-theme = "Ayu Mirage"
-background-opacity = 0.6
-background-blur-radius = 35
+theme = "catppuccin-macchiato"
+background-opacity = 1.0
+background-blur-radius = 0
 
 font-family = JetBrainsMono Nerd Font Mono
 font-size = 16

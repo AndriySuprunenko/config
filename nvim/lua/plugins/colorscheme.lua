@@ -50,7 +50,7 @@ return {
 					},
 				},
 			})
-			-- vim.cmd.colorscheme("catppuccin")
+			vim.cmd.colorscheme("catppuccin")
 		end,
 	},
 	{
@@ -72,7 +72,7 @@ return {
 					VertSplit = { bg = "None" },
 				},
 			})
-			vim.cmd.colorscheme("ayu")
+			-- vim.cmd.colorscheme("ayu")
 		end,
 	},
 }
