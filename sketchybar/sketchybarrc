@@ -39,13 +39,13 @@ sketchybar --bar height=32        \
 # For a full list of all available item properties see:
 # https://felixkratz.github.io/SketchyBar/config/items
 
+                     # background.corner_radius=20     \
 sketchybar --default icon.font="SF Pro:Semibold:15.0"  \
                      icon.color=$TEXT_COLOR            \
                      label.color=$TEXT_COLOR           \
                      label.font="SF Pro:Semibold:15.0" \
                      background.color=$ACCENT_COLOR    \
-                     background.corner_radius=0        \
-                     background.height=32              \
+                     background.height=24              \
                      padding_left=1                    \
                      padding_right=0                   \
                      label.padding_left=4              \
@@ -61,7 +61,7 @@ source $ITEM_DIR/front_app.sh
 
 # -- Right Side Items --
 source $ITEM_DIR/calendar.sh
-source $ITEM_DIR/bluetooth.sh
+# source $ITEM_DIR/bluetooth.sh
 source $ITEM_DIR/volume.sh
 source $ITEM_DIR/battery.sh
 # source $ITEM_DIR/disk.sh
