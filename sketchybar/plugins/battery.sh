@@ -14,13 +14,13 @@ case ${PERCENTAGE} in
     ;;
   [6-8][0-9])
     ICON="􀺸"
-    COLOR="0xffffff00" # yellow
+    COLOR="0xffa6da95" # yellow
     ;;
-  [3-5][0-9])
+  [2-5][0-9])
     ICON="􀺶"
     COLOR="0xffffa500" # orange
     ;;
-  [1-2][0-9])
+  [0-1][0-9])
     ICON="􀛩"
     COLOR="0xffff0000" # red
     ;;
