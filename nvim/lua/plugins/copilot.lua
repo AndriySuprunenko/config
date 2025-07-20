@@ -20,6 +20,5 @@ return {
 			{ "<leader>cm", "<cmd>CopilotChatCommit<cr>", mode = "n", desc = "Generate Commit Message" },
 			{ "<leader>cs", "<cmd>CopilotChatCommit<cr>", mode = "v", desc = "Generate Commit for Selection" },
 		},
-		-- See Commands section for default commands if you want to lazy load on them
 	},
 }

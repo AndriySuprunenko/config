@@ -14,7 +14,8 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Show buffe
 keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find string" })
 keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
 -- Explorer
-keymap.set("n", "<leader>e", ":lua MiniFiles.open()<CR>", { desc = "Explorer" })
+keymap.set("n", "<leader>q", ":lua MiniFiles.open()<CR>", { desc = "Explorer" })
+keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Explorer" })
 -- Copy to clipboard
 keymap.set("v", "<leader>y", '"+y', { desc = "Copy to clipboard" })
 --Delete word
