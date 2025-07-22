@@ -28,7 +28,7 @@ return {
 					floats = "transparent",
 				},
 			})
-			-- vim.cmd.colorscheme("tokyonight-storm")
+			vim.cmd.colorscheme("tokyonight-storm")
 		end,
 	},
 	{
@@ -50,7 +50,7 @@ return {
 					},
 				},
 			})
-			vim.cmd.colorscheme("catppuccin")
+			-- vim.cmd.colorscheme("catppuccin")
 		end,
 	},
 	{
