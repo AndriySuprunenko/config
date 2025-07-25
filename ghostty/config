@@ -4,8 +4,8 @@
 # catppuccin-macchiato
 # ayu-mirage
 theme = "nord"
-background-opacity = 1.0
-background-blur-radius = 0
+background-opacity = 0.8
+background-blur-radius = 30
 
 font-family = JetBrainsMono Nerd Font Mono
 font-size = 16
