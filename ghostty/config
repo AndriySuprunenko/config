@@ -3,7 +3,7 @@
 # tokyonight-storm
 # catppuccin-macchiato
 # ayu-mirage
-theme = "tokyonight-storm"
+theme = "nord"
 background-opacity = 1.0
 background-blur-radius = 0
 

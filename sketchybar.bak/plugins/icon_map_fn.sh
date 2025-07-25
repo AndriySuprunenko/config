@@ -11,11 +11,14 @@ function icon_map() {
   "VMware Fusion")
     icon_result=":vmware_fusion:"
     ;;
-  "Alacritty" | "Hyper" | "iTerm2" | "kitty" | "Terminal" | "终端" | "WezTerm")
+  "Alacritty" | "Hyper" | "iTerm2" | "kitty" | "Terminal" | "终端" | "WezTerm" | "Ghostty")
     icon_result=":terminal:"
     ;;
   "Microsoft To Do" | "Things")
     icon_result=":things:"
+    ;;
+  "Rakuten Viber")
+    icon_result=":viber:"
     ;;
   "Keyboard Maestro")
     icon_result=":keyboard_maestro:"
@@ -127,6 +130,9 @@ function icon_map() {
     ;;
   "Brave Browser")
     icon_result=":brave_browser:"
+    ;;
+  "Zen")
+    icon_result="󰺕"
     ;;
   "Spotlight")
     icon_result=":spotlight:"

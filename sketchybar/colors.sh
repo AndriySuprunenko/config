@@ -35,14 +35,14 @@
 
 # export ACCENT_COLOR=0xffff9e64
 
-export BAR_COLOR=0xff181825
+export BAR_COLOR=0xff2e3440
 
-export ITEM_BG_COLOR=0xff313244
+export ITEM_BG_COLOR=0xff5e81ac
 
-export TEXT_COLOR_ONE=0xffa6d189 #green
-export TEXT_COLOR_TWO=0xffdd7878 #pink
-export TEXT_COLOR_TREE=0xff04a5e5 #blue
-export TEXT_COLOR_FOUR=0xffcba6f7 #purple
-export TEXT_COLOR_FIVE=0xffdf8e1d #yellow
-export TEXT_COLOR_SIX=0xffb4befe #lavander
-export TEXT_COLOR_SEVEN=0xfffe640b #orange
+export TEXT_COLOR_ONE=0xffe5e9f0   #green
+export TEXT_COLOR_TWO=0xffe5e9f0   #pink
+export TEXT_COLOR_TREE=0xffe5e9f0  #blue
+export TEXT_COLOR_FOUR=0xffe5e9f0  #purple
+export TEXT_COLOR_FIVE=0xffe5e9f0  #yellow
+export TEXT_COLOR_SIX=0xffe5e9f0   #lavander
+export TEXT_COLOR_SEVEN=0xffe5e9f0 #orange

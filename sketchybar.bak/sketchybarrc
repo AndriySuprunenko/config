@@ -23,15 +23,15 @@ fi
 # If you are looking for other colors, see the color picker:
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
-sketchybar --bar height=34        \
-                 blur_radius=30   \
+                 # margin=5 \
+                 # y_offset=5 \
+                 # corner_radius=20 \
+sketchybar --bar height=32        \
+                 blur_radius=0   \
                  position=top     \
                  sticky=off       \
-                 padding_left=5  \
-                 margin=10 \
-                 corner_radius=10 \
-                 padding_right=10 \
-                 y_offset=5 \
+                 padding_left=0  \
+                 padding_right=0 \
                  color=$BAR_COLOR
 
 ##### Changing Defaults #####
@@ -39,14 +39,14 @@ sketchybar --bar height=34        \
 # For a full list of all available item properties see:
 # https://felixkratz.github.io/SketchyBar/config/items
 
+                     # icon.color=$TEXT_COLOR            \
+                     # label.color=$TEXT_COLOR           \
 sketchybar --default icon.font="SF Pro:Semibold:15.0"  \
-                     icon.color=$TEXT_COLOR            \
-                     label.color=$TEXT_COLOR           \
                      label.font="SF Pro:Semibold:15.0" \
                      background.color=$ACCENT_COLOR    \
-                     background.corner_radius=5        \
                      background.height=24              \
                      padding_left=5                    \
+                     background.corner_radius=20     \
                      padding_right=5                   \
                      label.padding_left=4              \
                      label.padding_right=10            \
@@ -56,14 +56,16 @@ sketchybar --default icon.font="SF Pro:Semibold:15.0"  \
 # -- Left Side Items --
 source $ITEM_DIR/apple.sh
 source $ITEM_DIR/spaces.sh
+source $ITEM_DIR/brew.sh
 source $ITEM_DIR/front_app.sh
 
 # -- Right Side Items --
 source $ITEM_DIR/calendar.sh
+# source $ITEM_DIR/bluetooth.sh
 source $ITEM_DIR/volume.sh
 source $ITEM_DIR/battery.sh
+# source $ITEM_DIR/disk.sh
 source $ITEM_DIR/ram.sh
-source $ITEM_DIR/disk.sh
 source $ITEM_DIR/cpu.sh
 
 
