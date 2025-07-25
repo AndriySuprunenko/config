@@ -35,8 +35,8 @@
 
 # export ACCENT_COLOR=0xffff9e64
 
-# export BAR_COLOR=0xff2e3440
-export BAR_COLOR=transparent
+export BAR_COLOR=0xff2e3440
+# export BAR_COLOR=transparent
 
 export ITEM_BG_COLOR=0xff5e81ac
 
